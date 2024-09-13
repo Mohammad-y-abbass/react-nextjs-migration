@@ -1,13 +1,14 @@
 // list of files and folders the parser should ignore
-const ignoredFiles = [
+const ignoredNodes = [
   'node_modules',
   '.git',
   '.vscode',
   'package-lock.json',
-  'package.json',
+  'dist',
+  'build',
 ];
 
 // cheeck if the file or folder is on the ignore list and return true or false
-export function checkIfFileIgnored(fileName: string): boolean {
-  return ignoredFiles.includes(fileName);
+export function checkIfNodeIsIgnored(fileName: string): boolean {
+  return ignoredNodes.includes(fileName);
 }
