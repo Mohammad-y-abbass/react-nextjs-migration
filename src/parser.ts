@@ -4,6 +4,10 @@ import { ASTNode } from './types.js';
 import { checkIfNodeIsIgnored } from './utils.js';
 import chalk from 'chalk';
 
+function parseProjectRoutes(routes_path: string) {
+  
+}
+
 export function parse(project_path: string): ASTNode[] {
   let projectAst: ASTNode[] = [];
 
